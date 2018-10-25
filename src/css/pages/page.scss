@@ -1,3 +1,94 @@
-p{
-  color: red;
+.header-section{
+  background-color: $topMenuBackgroundColor;
+  .top-menu-color{
+    color: $topMenuColor;
+  }
+  .top-menu{
+    font-size: 1.1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .login-account{
+      margin-right: 25px;
+      .nav{
+        .nav-item{
+          .nav-link{
+            padding: 1rem 0;
+            &:after{
+              content: "|";
+              margin: 0 1.5rem;
+              &:last-child{
+                content: "";
+              }
+            }
+          }
+        }
+      }
+    }
+    .call{
+      .call-link{
+        text-decoration: none;
+        i{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+.header-bottom-section{
+  padding: 15px 0;
+ .bottom-menu{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   .gold-color{
+     color: $goldColor;
+   }
+   .border{
+     width: 36px;
+     height: 36px;
+     border-radius: 50%;
+     line-height: 36px;
+     text-align: center;
+   }
+   .border-color{
+     border: 1px solid $goldColor !important;
+   }
+   .menu{
+     .navbar{
+       .navbar-nav{
+         .nav-item{
+           margin-right: 5px;
+           .nav-link{
+             font-size: 1.8rem;
+             color: #000000;
+             font-style: italic;
+           }
+         }
+       }
+     }
+   }
+   .logo{
+     margin: auto;
+   }
+   .social-icons{
+     font-size: 1.4rem;
+     margin-right: 48px;
+   }
+   .language{
+     select{
+       .custom-select{
+         height: calc(3.25rem + 2px) !important;
+         padding: 10px 21px;
+         line-height: 1.5;
+         color: #fff;
+         vertical-align: middle;
+         background: #000 !important;
+         border: 1px solid #ced4da;
+         -webkit-appearance: none;
+       }
+     }
+   }
+ }
 }

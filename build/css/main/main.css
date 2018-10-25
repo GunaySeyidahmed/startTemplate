@@ -127,8 +127,90 @@ body {
   src: url("../../fonts/jaznb.eot");
   src: url("../../fonts/jaznb.eot?#iefix") format("embedded-opentype"), url("../../fonts/jaznb.woff2") format("woff2"), url("../../fonts/jaznb.woff") format("woff"), url("../../fonts/jaznb.ttf") format("truetype"), url("../../fonts/jaznb.svg#jaznb") format("svg"); }
 
-p {
-  color: red; }
+.header-section {
+  background-color: #f2f2f2; }
+  .header-section .top-menu-color {
+    color: #393939; }
+  .header-section .top-menu {
+    font-size: 1.1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header-section .top-menu .login-account {
+      margin-right: 25px; }
+      .header-section .top-menu .login-account .nav .nav-item .nav-link {
+        padding: 1rem 0; }
+        .header-section .top-menu .login-account .nav .nav-item .nav-link:after {
+          content: "|";
+          margin: 0 1.5rem; }
+          .header-section .top-menu .login-account .nav .nav-item .nav-link:after:last-child {
+            content: ""; }
+    .header-section .top-menu .call .call-link {
+      text-decoration: none; }
+      .header-section .top-menu .call .call-link i {
+        margin-right: 10px; }
+
+.header-bottom-section {
+  padding: 15px 0; }
+  .header-bottom-section .bottom-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header-bottom-section .bottom-menu .gold-color {
+      color: #d9bf8f; }
+    .header-bottom-section .bottom-menu .border {
+      width: 36px;
+      height: 36px;
+      -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+              border-radius: 50%;
+      line-height: 36px;
+      text-align: center; }
+    .header-bottom-section .bottom-menu .border-color {
+      border: 1px solid #d9bf8f !important; }
+    .header-bottom-section .bottom-menu .menu .navbar .navbar-nav .nav-item {
+      margin-right: 5px; }
+      .header-bottom-section .bottom-menu .menu .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 1.8rem;
+        color: #000000;
+        font-style: italic; }
+    .header-bottom-section .bottom-menu .logo {
+      margin: auto; }
+    .header-bottom-section .bottom-menu .social-icons {
+      font-size: 1.4rem;
+      margin-right: 48px; }
+    .header-bottom-section .bottom-menu .language select .custom-select {
+      height: -webkit-calc(3.25rem + 2px) !important;
+      height: -moz-calc(3.25rem + 2px) !important;
+      height: calc(3.25rem + 2px) !important;
+      padding: 10px 21px;
+      line-height: 1.5;
+      color: #fff;
+      vertical-align: middle;
+      background: #000 !important;
+      border: 1px solid #ced4da;
+      -webkit-appearance: none; }
 
 /*! Gunay Memmedli  25 Oktyabr 2018  https://github.com/GunaySeyidahmed/ */
 /* ==========================================================================
