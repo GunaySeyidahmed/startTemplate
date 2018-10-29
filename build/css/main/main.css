@@ -374,6 +374,8 @@ body {
       width: 39%;
       height: 1px;
       background-color: #d9bf8f; }
+  .main-section .collection-section .pictures .picture {
+    margin-top: 10px; }
 
 @media screen and (max-width: 992px) {
   .triangle {
