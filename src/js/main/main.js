@@ -1,30 +1,13 @@
 $( document ).ready(function() {
-
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        stagePadding: 0,
-        items: 1,
-        singleItem:true,
-        autoHeight:true,
-        autoWidth:true,
-        nav:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
-            600:{
-                items:1,
-                nav:false
-            },
-            1000:{
-                items:1,
-                nav:true,
-                loop:false
-            }
-        }
-    })
-
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        prevArrow: false,
+        nextArrow: false,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        fade: true,
+        cssEase: 'linear'
+    });
 });

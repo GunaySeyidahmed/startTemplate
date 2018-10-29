@@ -1,0 +1,79 @@
+.back-transparent{
+  background-color: $transparentColor;
+}
+.sale-border{
+  border: 2px solid $whiteColor;
+}
+.border-radius{
+  border-radius: 3px;
+}
+.gold-color{
+  color: $goldColor;
+}
+.text-white-color{
+  color: $whiteColor;
+}
+.black-color{
+  color:$blackColor !important;
+}
+.top-menu-color {
+  color: $topMenuColor !important;
+}
+.border-style-outline{
+  outline-offset: -15px;
+}
+.outline-style{
+  outline:1px solid $whiteColor;
+}
+.position-shop-link{
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+}
+.back-orange-color{
+  background-color: $orangeColor;
+}
+.padding-15{
+  padding: 7px 20px;
+}
+.gold-background-color{
+background-color: $goldColor;
+}
+.black-background-color{
+  background-color: $blackColor;
+}
+.order-title{
+  font-size: 2.6rem;
+  font-weight: bolder;
+}
+.margin-distance{
+  margin: 0 15px;
+}
+.travel-title-description{
+
+}
+.margin-0{
+  margin: 0 !important;
+}
+.padding-left-40{
+  padding-left: 40px;
+}
+.rectangle{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+}
+.rectangle-left{
+  left: 39%;
+  top: 38%;
+}
+.rectangle-right{
+  right: 39%;
+  top: 38%;
+}
+.padding-40{
+  padding: 0 40px;
+}

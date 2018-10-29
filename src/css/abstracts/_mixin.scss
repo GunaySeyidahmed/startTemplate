@@ -85,3 +85,9 @@
 	url('../../fonts/#{$font}.ttf') format('truetype'),
 	url('../../fonts/#{$font}.svg##{$font}') format('svg');
 }
+
+@mixin calc($property, $expression) {
+	#{$property}: -webkit-calc(#{$expression});
+	#{$property}: -moz-calc(#{$expression});
+	#{$property}: calc(#{$expression});
+}

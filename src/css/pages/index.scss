@@ -1,18 +1,194 @@
-.main-section{
-  .slider{
-    .item {
-      //background-color: #4DC7A0;
-      //color: white;
-      //font-size: 30px;
-      //height: 150px;
-      //padding: 10px;
-      height: 600px !important;
+.main-section {
+  .slider-section{
+    position: relative;
+    .slider {
       width: 100%;
-      img{
-        object-fit: cover;
-        width: 100%;
-        height: auto;
+      float: left;
+      .item {
+        position: relative;
+        height: 640px !important;
+        overflow: hidden;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        .sale{
+          position: absolute;
+          padding: 50px 0;
+          width: 300px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          .sale-season{
+            font-size: 2rem;
+            font-weight: bold;
+          }
+          .sale-title{
+            font-size: 5.9rem;
+            font-weight: bold;
+          }
+          .sale-amount{
+            position: relative;
+            font-size:2rem;
+            font-weight: bold;
+            &:before{
+              content: "";
+              background-color: $whiteColor;
+              position: absolute;
+              width: 3.2rem;
+              height: 1px;
+              left: 70px;
+              top: 50%;
+            }
+            &:after{
+              content: "";
+              background-color: $whiteColor;
+              position: absolute;
+              width: 3.2rem;
+              height: 1px;
+              right: 70px;
+              top: 50%;
+            }
+          }
+          .sale-indicator{
+            font-size: 2rem;
+          }
+
+        }
+        .sale-link{
+          font-size: 2.4rem !important;
+          &:hover{
+            color: $whiteColor;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .slick-dots li.slick-active button::before {
+        color: #fff;
+        opacity: 1;
+      }
+
+      .slick-dots li button:before {
+        content: '' !important;
+        width: 12px;
+        height: 12px;
+        background-color: #b2b2b2;
+        transform: rotate(45deg);
+        opacity: 1;
+      }
+      .slick-dots{
+        bottom: 20px;
+          li{
+            &.slick-active button:before{
+                background-color: $blackColor !important;
+            }
+        }
       }
     }
+    .triangle{
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 60px solid #fff;
+      border-left: 400px solid transparent;
+      border-right: 400px solid transparent;
+      z-index: 999;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .order-section{
+   .orders{
+     .travel{
+       height: 75px;
+       width: 320px;
+       &:before{
+         position: absolute;
+         right: -40px;
+         content: "";
+         width: 0;
+         height: 0;
+         border-left: 40px solid $goldColor;
+         border-top: 37px solid transparent;
+         border-bottom: 37px solid transparent;
+       }
+
+
+     }
+     .back-money{
+       height: 75px;
+       width: 370px;
+       margin: 0 40px;
+       &:after{
+         position: absolute;
+         left: 0;
+         content: "";
+         width: 0;
+         height: 0;
+         border-left: 40px solid $whiteColor;
+         border-top: 37px solid transparent;
+         border-bottom: 37px solid transparent;
+       }
+       &:before{
+         position: absolute;
+         right: 0;
+         content: "";
+         width: 0;
+         height: 0;
+         border-right: 40px solid $whiteColor;
+         border-top: 37px solid transparent;
+         border-bottom: 37px solid transparent;
+       }
+     }
+     .support{
+       height: 75px;
+       width: 320px;
+       &:before{
+         position: absolute;
+         left: -40px;
+         content: "";
+         width: 0;
+         height: 0;
+         border-right: 40px solid $goldColor;
+         border-top: 37px solid transparent;
+         border-bottom: 37px solid transparent;
+       }
+     }
+   }
+  }
+  .collection-section{
+    padding:80px 0;
+    .page-title{
+      font-size: 3rem;
+      font-weight: bolder;
+      &:before{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: '';
+        width: 39%;
+        //@include calc(width,'100%-50px');
+        height: 1px;
+        background-color: $goldColor;
+      }
+      &:after{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        content: '';
+        width: 39%;
+        height: 1px;
+        background-color: $goldColor;
+      }
+    }
+  }
+}
+
+//responsive design
+@media screen and (max-width: 992px){
+  .triangle{
+    display: none !important;
   }
 }

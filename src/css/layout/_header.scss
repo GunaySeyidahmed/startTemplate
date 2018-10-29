@@ -1,0 +1,117 @@
+.header-top-section{
+  background-color: $topMenuBackgroundColor;
+  .navbar{
+    width: 100%;
+    .navbar-nav {
+      font-size: 1.1rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 25px;
+      .nav-item {
+        margin-right: 10px;
+        .nav-link {
+          padding: 1rem 0;
+          &:after {
+            content: "|";
+            margin: 0 1.5rem;
+          }
+        }
+        &:first-child{
+          margin-right: 0;
+          left: 0;
+          .nav-link{
+            i{
+              margin-right: 5px;
+            }
+            &:after {
+              content: "";
+              margin:0;
+            }
+          }
+        }
+        &:last-child{
+          margin-right: 0;
+         .nav-link{
+           &:after {
+             content: "";
+             margin: 0;
+           }
+         }
+        }
+      }
+    }
+  }
+}
+.header-bottom-section{
+  padding: 15px 0;
+  .additional-link-show{
+    display: none;
+  }
+  .additional-link-hide{
+    display: block;
+  }
+  .navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .navbar-toggler{
+      border-color: transparent;
+    }
+    .border{
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      line-height: 36px;
+      text-align: center;
+    }
+    .border-color{
+      border: 1px solid $goldColor !important;
+    }
+    .navbar-nav{
+          .nav-item{
+            margin-right: 5px;
+            &:last-child{
+              margin-right: 0;
+            }
+            .nav-link{
+              font-size: 1.8rem;
+              font-style: italic;
+              padding-right:0;
+            }
+          }
+        }
+    .social-icons{
+      font-size: 1.8rem;
+      margin-right: 48px;
+    }
+    .language{
+      select{
+        .custom-select{
+          height: calc(3.25rem + 2px) !important;
+          padding: 10px 21px;
+          line-height: 1.5;
+          color: #fff;
+          vertical-align: middle;
+          background: #000 !important;
+          border: 1px solid #ced4da;
+          -webkit-appearance: none;
+        }
+      }
+    }
+  }
+}
+
+//responsive design
+@media screen and (max-width: 992px){
+  .additional-link-show{
+    display: inline-block !important;
+  }
+  .additional-link-hide{
+    display: none !important;
+  }
+  .login-float-right{
+    float: right !important;
+  }
+}
