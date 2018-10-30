@@ -11,7 +11,7 @@
   color: $goldColor;
 }
 .text-white-color{
-  color: $whiteColor;
+  color: $whiteColor !important;
 }
 .black-color{
   color:$blackColor !important;
@@ -23,8 +23,9 @@
   outline-offset: -15px;
 }
 .outline-style{
-  outline:1px solid $whiteColor;
+  outline:2px solid $whiteColor;
 }
+
 .position-shop-link{
   position: absolute;
   bottom: 12%;
@@ -44,6 +45,29 @@ background-color: $goldColor;
 .black-background-color{
   background-color: $blackColor;
 }
+.page-title{
+  font-size: 3rem;
+  font-weight: bolder;
+  &:before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: '';
+    width: 39%;
+    //@include calc(width,'100%-50px');
+    height: 1px;
+    background-color: $goldColor;
+  }
+  &:after{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: '';
+    width: 39%;
+    height: 1px;
+    background-color: $goldColor;
+  }
+}
 .order-title{
   font-size: 2.6rem;
   font-weight: bolder;
@@ -51,9 +75,7 @@ background-color: $goldColor;
 .margin-distance{
   margin: 0 15px;
 }
-.travel-title-description{
 
-}
 .margin-0{
   margin: 0 !important;
 }
@@ -76,4 +98,28 @@ background-color: $goldColor;
 }
 .padding-40{
   padding: 0 40px;
+}
+.m-bottom{
+  margin-bottom: 40px;
+}
+.pictures-outline-style{
+  outline: 1px solid red;
+}
+.picture-overlay{
+  background-color: rgba(0,0,0,.7);
+  left: 15px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  //min-height: 300px;
+  max-width: 320px;
+  overflow: hidden;
+  opacity:0;
+}
+.sale-collection-link{
+    font-size: 1.1rem !important;
+  &:hover{
+    color: $whiteColor;
+    text-decoration: none;
+    }
 }
