@@ -1,0 +1,22 @@
+.footer-section{
+  padding-top: 100px;
+  .links{
+    .link{
+      .p-title{
+        font-size: 1.6rem;
+      }
+      .lists{
+        font-size: 1.4rem;
+          .list-item{
+            &:hover{
+              .list-link{
+                text-decoration: none;
+                border-bottom: 1px solid $light-grey;
+              }
+            }
+          }
+      }
+    }
+  }
+}
+
