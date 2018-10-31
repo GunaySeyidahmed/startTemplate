@@ -164,3 +164,26 @@ background-color: $goldColor;
 .text-light-grey{
   color: #737373;
 }
+.mb-20{
+  margin-bottom: 20px;
+}
+.text-small{
+  font-size: 1.6rem;
+}
+.social-icons{
+  font-size: 1.8rem;
+  margin-right: 20px;
+}
+.border{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+}
+.border-gold-color{
+  border: 1px solid $goldColor !important;
+}
+.background-white{
+  background-color: $whiteColor;
+}
