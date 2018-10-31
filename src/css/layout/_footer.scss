@@ -17,6 +17,22 @@
             }
           }
       }
+
+    }
+    .subscribe{
+      .subscribe-input{
+        font-size: 1.2rem;
+        background-color: transparent;
+        border-color:#484848;
+        padding: 15px 20px;
+        &:focus{
+          box-shadow: none;
+        }
+        &::placeholder{
+          color: #6a6a6a;
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 }

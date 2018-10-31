@@ -31,7 +31,7 @@
   bottom: 12%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 99999;
+  z-index: 9999;
 }
 .back-orange-color{
   background-color: $orangeColor;
@@ -46,27 +46,30 @@ background-color: $goldColor;
   background-color: $blackColor;
 }
 .page-title{
-  font-size: 3rem;
-  font-weight: bolder;
-  &:before{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    content: '';
-    width: 39%;
-    //@include calc(width,'100%-50px');
-    height: 1px;
-    background-color: $goldColor;
-  }
-  &:after{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    content: '';
-    width: 39%;
-    height: 1px;
-    background-color: $goldColor;
-  }
+    font-weight: bolder;
+    font-size: 2.6rem;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before,&:after{
+      background-color: rgba(252,189,110,.5);
+      position: absolute;
+      height: 1px;
+      width: calc(50% - 124px);
+      content: '';
+    }
+    &:before{
+      right: 0;
+    }
+    &:after{
+      left: 0;
+    }
+}
+.min-width{
+  display: inline-block;
+  min-width: 214px;
 }
 .order-title{
   font-size: 2.6rem;
@@ -167,6 +170,9 @@ background-color: $goldColor;
 .mb-20{
   margin-bottom: 20px;
 }
+.mb-30{
+  margin-bottom: 30px;
+}
 .text-small{
   font-size: 1.6rem;
 }
@@ -187,3 +193,7 @@ background-color: $goldColor;
 .background-white{
   background-color: $whiteColor;
 }
+.border-bottom-gray{
+  color: #6a6a6a;
+}
+
