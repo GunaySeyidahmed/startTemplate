@@ -1,6 +1,8 @@
 .footer-section{
   padding-top: 100px;
   .links{
+    padding-bottom: 50px;
+    padding-right: 60px;
     .link{
       .p-title{
         font-size: 1.6rem;
@@ -24,7 +26,7 @@
         font-size: 1.2rem;
         background-color: transparent;
         border-color:#484848;
-        padding: 15px 20px;
+        padding: 10px 101px 10px 12px;
         &:focus{
           box-shadow: none;
         }
@@ -33,6 +35,50 @@
           font-size: 1.2rem;
         }
       }
+      .input-group-append{
+        margin-left: -90px !important;
+        .btn{
+          padding: 5px 12px;
+          background-color: #323030;
+          color: white;
+          border: 1px solid #323030;
+          border-radius: 0;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    &.links-border-bottom{
+      border-bottom: 1px solid #363636;
+    }
+  }
+  .copyright{
+    padding: 60px 0;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    .cards{
+      .card-item{
+        margin-right: 6px;
+        .card-link{
+          font-size: 3.2rem;
+        }
+      }
+    }
+  }
+  .footer-bottom{
+    min-height: 40px;
+  }
+  .scroll-up{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    right: 0;
+    bottom: 100px;
+    position: fixed;
+    display: none;
+    i{
+      color: white;
+      font-size: 2.8rem;
     }
   }
 }

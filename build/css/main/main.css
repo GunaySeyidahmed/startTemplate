@@ -350,6 +350,9 @@ body {
 .border-bottom-gray {
   color: #6a6a6a; }
 
+.text-gray {
+  color: #363636; }
+
 .main-section .slider-section {
   position: relative; }
   .main-section .slider-section .slider {
@@ -549,38 +552,76 @@ body {
 
 .footer-section {
   padding-top: 100px; }
-  .footer-section .links .link .p-title {
-    font-size: 1.6rem; }
-  .footer-section .links .link .lists {
-    font-size: 1.4rem; }
-    .footer-section .links .link .lists .list-item:hover .list-link {
-      color: #737373;
-      text-decoration: none;
-      border-bottom: 1px solid #737373; }
-  .footer-section .links .subscribe .subscribe-input {
+  .footer-section .links {
+    padding-bottom: 50px;
+    padding-right: 60px; }
+    .footer-section .links .link .p-title {
+      font-size: 1.6rem; }
+    .footer-section .links .link .lists {
+      font-size: 1.4rem; }
+      .footer-section .links .link .lists .list-item:hover .list-link {
+        color: #737373;
+        text-decoration: none;
+        border-bottom: 1px solid #737373; }
+    .footer-section .links .subscribe .subscribe-input {
+      font-size: 1.2rem;
+      background-color: transparent;
+      border-color: #484848;
+      padding: 10px 101px 10px 12px; }
+      .footer-section .links .subscribe .subscribe-input:focus {
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none; }
+      .footer-section .links .subscribe .subscribe-input::-webkit-input-placeholder {
+        color: #6a6a6a;
+        font-size: 1.2rem; }
+      .footer-section .links .subscribe .subscribe-input:-moz-placeholder {
+        color: #6a6a6a;
+        font-size: 1.2rem; }
+      .footer-section .links .subscribe .subscribe-input::-moz-placeholder {
+        color: #6a6a6a;
+        font-size: 1.2rem; }
+      .footer-section .links .subscribe .subscribe-input:-ms-input-placeholder {
+        color: #6a6a6a;
+        font-size: 1.2rem; }
+      .footer-section .links .subscribe .subscribe-input::placeholder {
+        color: #6a6a6a;
+        font-size: 1.2rem; }
+    .footer-section .links .subscribe .input-group-append {
+      margin-left: -90px !important; }
+      .footer-section .links .subscribe .input-group-append .btn {
+        padding: 5px 12px;
+        background-color: #323030;
+        color: white;
+        border: 1px solid #323030;
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+                border-radius: 0;
+        font-size: 1.2rem; }
+    .footer-section .links.links-border-bottom {
+      border-bottom: 1px solid #363636; }
+  .footer-section .copyright {
+    padding: 60px 0;
     font-size: 1.2rem;
-    background-color: transparent;
-    border-color: #484848;
-    padding: 15px 20px; }
-    .footer-section .links .subscribe .subscribe-input:focus {
-      -webkit-box-shadow: none;
-         -moz-box-shadow: none;
-              box-shadow: none; }
-    .footer-section .links .subscribe .subscribe-input::-webkit-input-placeholder {
-      color: #6a6a6a;
-      font-size: 1.2rem; }
-    .footer-section .links .subscribe .subscribe-input:-moz-placeholder {
-      color: #6a6a6a;
-      font-size: 1.2rem; }
-    .footer-section .links .subscribe .subscribe-input::-moz-placeholder {
-      color: #6a6a6a;
-      font-size: 1.2rem; }
-    .footer-section .links .subscribe .subscribe-input:-ms-input-placeholder {
-      color: #6a6a6a;
-      font-size: 1.2rem; }
-    .footer-section .links .subscribe .subscribe-input::placeholder {
-      color: #6a6a6a;
-      font-size: 1.2rem; }
+    line-height: 1.8rem; }
+    .footer-section .copyright .cards .card-item {
+      margin-right: 6px; }
+      .footer-section .copyright .cards .card-item .card-link {
+        font-size: 3.2rem; }
+  .footer-section .footer-bottom {
+    min-height: 40px; }
+  .footer-section .scroll-up {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    right: 0;
+    bottom: 100px;
+    position: fixed;
+    display: none; }
+    .footer-section .scroll-up i {
+      color: white;
+      font-size: 2.8rem; }
 
 .header-top-section {
   background-color: #f2f2f2; }

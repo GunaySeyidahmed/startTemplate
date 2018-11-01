@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+
     $('.slider').slick({
         dots: true,
         infinite: true,
@@ -45,5 +46,27 @@ $( document ).ready(function() {
             // instead of a settings object
         ]
     });
+    $(window).scroll(function(){
+
+        if ($(this).scrollTop() > 100) {
+
+            $('.scrollup').fadeIn();
+
+        } else {
+
+            $('.scrollup').fadeOut();
+
+        }
+
+    });
+
+    $('.scrollup').click(function(){
+
+        $("html, body").animate({ scrollTop: 0 }, 600);
+
+        return false;
+
+    });
+
 
 });
