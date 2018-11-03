@@ -64,6 +64,15 @@
       }
     }
   }
+  .footer-tab{
+    top: 59.4%;
+    left: 50%;
+      width: 0;
+      height:0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 10px solid $grayColor;
+  }
   .footer-bottom{
     min-height: 40px;
   }
@@ -72,9 +81,10 @@
     height: 30px;
     line-height: 30px;
     text-align: center;
-    right: 0;
-    bottom: 100px;
+    bottom:13%;
+    right: 12%;
     position: fixed;
+    overflow: hidden;
     display: none;
     i{
       color: white;
