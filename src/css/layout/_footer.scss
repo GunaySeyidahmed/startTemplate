@@ -47,9 +47,9 @@
         }
       }
     }
-    &.links-border-bottom{
-      border-bottom: 1px solid #363636;
-    }
+    //&.links-border-bottom{
+    //  border-bottom: 1px solid #363636;
+    //}
   }
   .copyright{
     padding: 60px 0;
@@ -65,8 +65,9 @@
     }
   }
   .footer-tab{
-    top: 59.4%;
+    top: 0;
     left: 50%;
+    z-index: 9999;
       width: 0;
       height:0;
       border-left: 15px solid transparent;
@@ -92,4 +93,14 @@
     }
   }
 }
-
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+@media screen and (max-width: 768px){
+.copyright{
+  text-align: center;
+}
+}

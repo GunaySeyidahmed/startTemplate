@@ -368,6 +368,11 @@ body {
   .discount-company .discount-product {
     font-size: 1.4rem; }
 
+.border-line {
+  background-color: #363636;
+  height: 1px;
+  width: 100%; }
+
 .main-section .slider-section {
   position: relative; }
   .main-section .slider-section .slider {
@@ -605,36 +610,70 @@ body {
     max-width: 100%;
     height: 60px;
     -o-object-fit: cover;
-       object-fit: cover; }
+       object-fit: cover;
+    margin: auto; }
 
 .main-section .testimonials-section {
-  background: url("../../img/testimonial-background.png") center;
-  min-height: 400px; }
-  .main-section .testimonials-section .testimonials .testimonial-img {
-    height: 300px;
-    width: 240px; }
-    .main-section .testimonials-section .testimonials .testimonial-img img {
-      max-width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover; }
-  .main-section .testimonials-section .testimonials .testimonial-description {
-    max-width: 27%; }
-    .main-section .testimonials-section .testimonials .testimonial-description .testimonial-comment {
-      font-size: 1.8rem; }
-    .main-section .testimonials-section .testimonials .testimonial-description .testimonial-name {
-      font-size: 3rem; }
-    .main-section .testimonials-section .testimonials .testimonial-description .testimonial-position {
-      font-size: 1.4rem;
-      color: #7f7e7e; }
+  background-color: #d9bf8f !important;
+  min-height: 400px;
+  width: 100%; }
+  .main-section .testimonials-section .testimonials {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .main-section .testimonials-section .testimonials .testimonial-img {
+      height: 300px;
+      width: 240px; }
+      .main-section .testimonials-section .testimonials .testimonial-img img {
+        max-width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .main-section .testimonials-section .testimonials .testimonial-description {
+      max-width: 27%; }
+      .main-section .testimonials-section .testimonials .testimonial-description .testimonial-comment {
+        font-size: 1.8rem; }
+      .main-section .testimonials-section .testimonials .testimonial-description .testimonial-name {
+        font-size: 3rem; }
+      .main-section .testimonials-section .testimonials .testimonial-description .testimonial-position {
+        font-size: 1.4rem;
+        color: #7f7e7e; }
 
 @media screen and (max-width: 992px) {
   .triangle {
-    display: none !important; } }
+    display: none !important; }
+  .testimonials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .testimonial-description {
+    max-width: 100% !important;
+    text-align: center;
+    margin-bottom: 30px; }
+  .testimonial-comment {
+    text-align: center; }
+  .testimonial-name {
+    margin: auto; }
+  .testimonial-position {
+    margin: auto; }
+  .order-img {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+       -moz-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0; } }
 
 @media screen and (max-width: 768px) {
   .center-picture {
-    margin: 10px 0; } }
+    margin: 10px 0; }
+  .slick-dots {
+    display: none !important; }
+  .brand-section {
+    margin-bottom: 50px !important; } }
 
 .footer-section {
   padding-top: 100px; }
@@ -684,8 +723,6 @@ body {
            -moz-border-radius: 0;
                 border-radius: 0;
         font-size: 1.2rem; }
-    .footer-section .links.links-border-bottom {
-      border-bottom: 1px solid #363636; }
   .footer-section .copyright {
     padding: 60px 0;
     font-size: 1.2rem;
@@ -695,8 +732,9 @@ body {
       .footer-section .copyright .cards .card-item .card-link {
         font-size: 3.2rem; }
   .footer-section .footer-tab {
-    top: 59.4%;
+    top: 0;
     left: 50%;
+    z-index: 9999;
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
@@ -717,6 +755,16 @@ body {
     .footer-section .scroll-up i {
       color: white;
       font-size: 2.8rem; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  .copyright {
+    text-align: center; } }
 
 .header-top-section {
   background-color: #f2f2f2; }

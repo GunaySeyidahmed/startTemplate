@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function () {
 
     $('.slider').slick({
         dots: true,
@@ -46,24 +46,25 @@ $( document ).ready(function() {
             // instead of a settings object
         ]
     });
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            console.log($(this).scrollTop());
-            $('.scroll-up').fadeIn('slow');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 250) {
+            $('.scroll-up').fadeIn("slow").css("display", "block");
         } else {
-            $('.scroll-up').fadeOut('slow');
+            $('.scroll-up').fadeOut("slow").css("display", "none");
         }
     });
-    $(".scroll-up").click(function(event) {
+    $(".scroll-up").click(function (event) {
         event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "slow");
+        $("html, body").animate({scrollTop: 0}, "slow");
         return false;
     });
-    $('.footer-tab').toggle(function () {
-        $("#copy-down").slideUp();
+    $('#footer-tab').toggle(function () {
+            $("#copy-down").slideUp();
+            console.log("show")
         },
         function () {
             $("#copy-down").slideDown();
+            console.log("show")
         }
     )
 });
